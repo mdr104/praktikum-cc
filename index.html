@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azure Test Website</title>
+    <title>Cloud Computing Website</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,6 +13,7 @@
             text-align: center;
             padding-top: 100px;
         }
+
         .card {
             background: rgba(255,255,255,0.1);
             padding: 30px;
@@ -19,12 +21,15 @@
             display: inline-block;
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
         }
+
         h1 {
             margin-bottom: 10px;
         }
+
         p {
             font-size: 18px;
         }
+
         .btn {
             margin-top: 20px;
             padding: 10px 20px;
@@ -35,31 +40,52 @@
             cursor: pointer;
             font-weight: bold;
         }
+
         .btn:hover {
             background: #f0f0f0;
         }
     </style>
 </head>
+
 <body>
+
     <div class="card">
-        <h1>🚀 Azure Web Test</h1>
-        <p>Website ini berhasil berjalan di Microsoft Azure!</p>
+        <h1>🚀 Cloud Computing Website</h1>
+
+        <p>Website ini berhasil di-deploy menggunakan Vercel!</p>
+
+        <p>Platform: Vercel</p>
+
+        <p>Repository: GitHub</p>
+
         <p id="time"></p>
-        <button class="btn" onclick="showMessage()">Klik Saya</button>
+
+        <h3>Continuous Deployment</h3>
+
+        <p>
+            Website diperbarui melalui GitHub
+            dan di-deploy secara otomatis oleh Vercel.
+        </p>
+
+        <button class="btn" onclick="showMessage()">
+            Klik Saya
+        </button>
     </div>
 
     <script>
         function showMessage() {
-            alert("Halo! Website kamu sudah berhasil berjalan di Azure 🎉");
+            alert("Halo! Website berhasil dimodifikasi melalui GitHub!");
         }
 
         function updateTime() {
             const now = new Date();
-            document.getElementById("time").innerText = "Waktu sekarang: " + now.toLocaleString();
+            document.getElementById("time").innerText =
+                "Waktu sekarang: " + now.toLocaleString();
         }
 
         setInterval(updateTime, 1000);
         updateTime();
     </script>
+
 </body>
 </html>
